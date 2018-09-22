@@ -1,0 +1,6 @@
+protoc.exe2.6.1下载： https://pan.baidu.com/s/1RCtyt3SOvetIdxeoFOwuug
+将proto.exe文件拷贝到解压后的protobuf-2.6.1\src目录中
+
+protoc caffe.proto --cpp_out=./
+
+protoc caffe.proto --python_out=./
