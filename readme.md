@@ -5,6 +5,7 @@
 
 ### 使用			
 &emsp;&emsp;如果你只需要使用现有的caffe，不需要修改相关代码（例如添加新的层），那你可以直接使用我已经编译好的文件，从[这里](https://pan.baidu.com/s/12lff-Mn8Jja1d1CMUkvtXA)下载Release.zip文件。			
+
 &emsp;&emsp;首先clong整个文件夹，放置在D盘下，并将主目录重命名为win-ssd。然后把下载的Release.zip解压放置到caffe-ssd-ms下，并将Release加入到环境变量。接着你就可以开发你自己的程序了。如果你开发的是C++程序，可以参考[CaffeTemplate](http://)，里面是已经建立好的独立的caffe工程。如果你开发的是python程序，你需要将Release/pycaffe/caffe文件夹放置于anaconda2/lib/site-packages文件夹下，然后你就可以像在ubuntu下那样使用caffe。如果你更喜欢使用matlab版本的caffe，请自行编译。			
 
 ### 编译			
@@ -13,7 +14,10 @@ D:/win-ssd/
 &emsp;&emsp;--caffe-ssd-ms
 &emsp;&emsp;&emsp;&emsp;--windows
 &emsp;&emsp;--NugetPackages					
+
 &emsp;&emsp;2、找到caffe-ssd-ms/windows/caffe.sln，使用vs2013打开。在解决方案窗口，打开props/CommonSettings.props，里面是工程的一些配置选项。比较重要的选项有CPU、GPU、CUDNN开关，CUDA版本，cudnn路径，python目录（anaconda2路径），默认使用opencv。根据我已经配置好的路径适当修改为自己的路径。				
+
 &emsp;&emsp;3、在调试->属性选择Release、x64，在生成->配置管理器勾选需要编译的项目。			
 &emsp;&emsp;4、接下来就是编译了，时间比较长。			
+
 &emsp;&emsp;5、这个代码是我编译了将近一个星期才完成的，解决了N多错误。自己也已经用它做过了几个项目，所以代码是没有问题的，如果编译当中出现了错误，一般是路径的问题，请对照提示信息，仔细检查。如果仍然有问题，可以从我上面给出的链接直接下载完整的包编译，也可以给我发邮件（zxdzhuwei@foxmail.com）。
