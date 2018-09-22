@@ -11,13 +11,17 @@
 ### 编译			
 &emsp;&emsp;1、必须安装好anaconda2和opencv（如果不使用opencv可以不安装）。（1）从[这里](https://pan.baidu.com/s/12lff-Mn8Jja1d1CMUkvtXA)下载Nuget依赖包。你也可以在编译的时候开启Nuget还原，自动下载依赖包，不过很慢，甚至根本下载不了。（2）下载上面网盘里的windows.zip文件，解压后放置于caffe-ssd-ms文件夹下。文件目录：				
 D:/win-ssd/			
-&emsp;&emsp;--caffe-ssd-ms
-&emsp;&emsp;&emsp;&emsp;--windows
+
+&emsp;&emsp;--caffe-ssd-ms			
+
+&emsp;&emsp;&emsp;&emsp;--windows		
+
 &emsp;&emsp;--NugetPackages					
 
 &emsp;&emsp;2、找到caffe-ssd-ms/windows/caffe.sln，使用vs2013打开。在解决方案窗口，打开props/CommonSettings.props，里面是工程的一些配置选项。比较重要的选项有CPU、GPU、CUDNN开关，CUDA版本，cudnn路径，python目录（anaconda2路径），默认使用opencv。根据我已经配置好的路径适当修改为自己的路径。				
 
 &emsp;&emsp;3、在调试->属性选择Release、x64，在生成->配置管理器勾选需要编译的项目。			
+
 &emsp;&emsp;4、接下来就是编译了，时间比较长。			
 
 &emsp;&emsp;5、这个代码是我编译了将近一个星期才完成的，解决了N多错误。自己也已经用它做过了几个项目，所以代码是没有问题的，如果编译当中出现了错误，一般是路径的问题，请对照提示信息，仔细检查。如果仍然有问题，可以从我上面给出的链接直接下载完整的包编译，也可以给我发邮件（zxdzhuwei@foxmail.com）。
